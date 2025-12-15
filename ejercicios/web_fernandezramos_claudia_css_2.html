@@ -1,0 +1,62 @@
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS 2 · id + índice — Claudia Fernández Ramos</title>
+    <style>
+      /* Tipografía global (web-safe) */
+      * { font-family: Georgia, serif; }
+
+      /* Fondo general (RGB) */
+      body { background-color: rgb(224, 224, 224); }
+
+      /* === REGLAS GENERALES (afectan al primer animal) === */
+       p {
+        color: rgb(71, 160, 205);
+      }
+  h1 {
+        color: rgb(233, 164, 3);
+      }
+     
+      strong {
+        color: rgb(57, 108, 44);
+      }
+      /* === REGLAS POR id (afectan SOLO al segundo animal) === */
+      #titulo-animal2 { color: rgb(127, 196, 112); }   
+      #desc-animal2   { color: rgb(61, 135, 43); }     
+      #desc-animal2 strong { color: rgb(194, 159, 114); } 
+    </style>
+  </head>
+  <body>
+    <!-- ÍNDICE: ul con enlaces a ids -->
+    <h2 id="indice">Índice</h2>
+    <ul>
+      <li><a href="#titulo-animal1">Primera criatura</a></li>
+      <li><a href="#titulo-animal2">Segunda criatura</a></li>
+    </ul>
+
+    <!-- PRIMER ANIMAL: añade ids para enlazar desde el índice -->
+    <h1 id="titulo-animal1">Primer animal: Loro</h1>
+    <p id="desc-animal1">
+      Los <strong>loros</strong> viven en zonas diversas pueden vivir tanto en selvas amazónicas como en áridos bosques en Australia. Por lo tanto no tienen un hábitad típico aunque prefieren los climas tropicales y subtropicales.
+      Se caracteriza por un patrón de color llamativo y por su capacidad de imitar el habla humana.
+    </p>
+       <img src="imagenes/criatura.jpg"
+         alt="loros en una rama"
+         width="320">
+    
+    <p><a href="#indice">Volver al índice</a></p>
+
+    <!-- SEGUNDO ANIMAL: con ids para estilo y para anclar desde el índice -->
+    <h1 id="titulo-animal2">Segundo animal: Rana</h1>
+    <p id="desc-animal2">
+      Las <strong>ranas</strong> pueden vivir en una gran variedad de hábitats, desde ríos y arroyos hasta bosques tropicales y zonas subárticas. Son un tipo de anfibios caracterizados principalmente por su gran capacidad de salto gracias a la morfología de sus extremidades posteriores.
+    </p>
+    <img src="imagenes/rana.jpg"
+         alt="rana"
+         width="320">
+    <p><a href="#indice">Volver al índice</a></p>
+  </body>
+</html>
+  </body>
+</html>
