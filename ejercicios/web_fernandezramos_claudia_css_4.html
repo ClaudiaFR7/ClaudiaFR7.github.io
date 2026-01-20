@@ -5,47 +5,71 @@
   <title>Catálogo de criaturas · Claudia Fernández Ramos</title>
   <style>
 
-    * {
-      font-family: Georgia, serif;
-    }
-    body {  
-      background-color: rgb(224, 224, 224);
-    }
+* {font-family: Arial, Helvetica, sans-serif;}
+
+body {background-color: rgb(245, 247, 250);margin: 0;padding: 0;}
+
    
-    .titulo {
-  color: rgb(
-156, 156, 156);
+    .titulo {color: rgb(156, 156, 156);}
+    .texto {color: rgb(45, 55, 72);}
+    .texto strong {color: rgb(231, 111, 81);
+                   
+    .grupo-aves .titulo{ color: rgb(116, 159, 173);}
+    .grupo-aves .texto { color: rgb(122, 100, 59);}
+    .grupo-aves .texto strong { color: rgb(207, 139, 45); }
+
+    .grupo-reptiles .titulo {color: rgb(124, 161, 131);}
+    .grupo-reptiles .texto {color: rgb(115, 130, 65); }
+    .grupo-reptiles .texto strong { color: rgb(214, 135, 204);}
+
+/* ===== ZONAS SEMÁNTICAS COMO CAJAS ===== */
+header, nav, main, footer {
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(210, 220, 230);
+  border-radius: 14px;
+  padding: 16px;}
+
+/* Header: centrado y espaciado (sin imponer color, lo decidirán las clases si lo deseas) */
+header h1 {
+  text-align: center;
+  margin: 0 0 10px 0;
 }
 
-.texto {
-  color: rgb(45, 55, 72);
+/* Nav: que se lea limpio (sin fijar colores de títulos de grupo) */
+nav h2 {
+  margin: 0 0 10px 0;
+  text-align: center;
 }
 
-.texto strong {
-  color: rgb(231, 111, 81);
+nav ul {
+  margin: 0;
+  padding: 0 0 0 18px;
 }
 
-  
-    .grupo-aves .titulo{ 
-      color: rgb(116, 159, 173);
-    }
-    .grupo-aves .texto 
-    { color: rgb(122, 100, 59);
-    }
-    .grupo-aves .texto strong { 
-      color: rgb(207, 139, 45); 
-    }
+/* Enlaces del nav: un color neutro (no depende del grupo) */
+nav a {
+  color: rgb(27, 38, 59);
+}
 
-    
-    .grupo-reptiles .titulo {
-      color: rgb(124, 161, 131);
-    }
-    .grupo-reptiles .texto {
-      color: rgb(115, 130, 65); 
-    }
-    .grupo-reptiles .texto strong { 
-      color: rgb(214, 135, 204);
-    }
+/* ===== SECCIONES DE GRUPO COMO “BLOQUES” ===== */
+section {
+  border: 2px dashed rgb(220, 226, 230);
+  border-radius: 12px;
+  padding: 14px;
+  margin: 16px 0;
+  background-color: rgb(250, 251, 252);
+}
+
+/* ===== TARJETAS (article) ===== */
+article {
+  border: 1px solid rgb(225, 230, 235);
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  padding: 14px;
+  margin: 12px 0;
+}
   </style>
 </head>
 <body>
@@ -140,4 +164,5 @@ Las <strong>ranas</strong> pueden vivir en una gran variedad de hábitats, desde
 
 </body>
 </html>
+
 
