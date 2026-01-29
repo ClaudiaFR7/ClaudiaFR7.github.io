@@ -5,14 +5,14 @@
     <title>Mi trabajo en TICII · Claudia Fernández Ramos</title>
       <style>
     * {font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);}
-         .titulo {color: 9, 255, 0}; font-family: 'Lucida Console', monospace;}
+         .titulo {color: rgb(9, 255, 0); font-family: 'Lucida Console', monospace;}
          .texto {font-family: Verdana, sans-serif; color: rgb(87, 106, 138);}
         body {background-color: rgb(0, 0, 0);}
         .strong {color: rgb(88, 173, 169);}
         h1 {font-family: Courier New, cursive;color: rgb(9, 255, 0);}
-         .indice {rgb(255, 40, 0);}
+         .indice {color: rgb(255, 40, 0);}
 
-    body {background-color: rgb(147, 180, 199);margin: 30;padding: 30;}
+    body {background-color: rgb(147, 180, 199);margin: 30px;padding: 30px;}
 
    
 
@@ -23,7 +23,7 @@ header, nav, main, footer {
   margin: 20px auto;
   background-color: rgb(250, 227, 195);
   border: 2px solid rgb(210, 220, 230);
-  border-radius: 14px
+  border-radius: 14px;
   padding: 16px;}
 
 /* Header: centrado y espaciado (sin imponer color, lo decidirán las clases si lo deseas) */
@@ -70,7 +70,10 @@ article {
   
   </head>
   <body>
-    <h1>Mi trabajo en TICII — Claudia Fernández Ramos</h1>
+    <header id="inicio">
+    <h1>Mi trabajo en TICII — Claudia Fernández Ramos</h1>  </header> 
+    
+    <nav>
     <h2 class="indice">Índice</h2>
     <ul>
       <li><a href="#presentacion">Presentación</a></li>
@@ -80,44 +83,99 @@ article {
        <li><a href="#referencias">Recursos de calidad (externos)</a></li>
        <li><a href="#creditos">Créditos y licencias</a></li>
        <li><a href="#contacto">Contacto</a></li>
-    
-    </ul>
+     </ul>
+</nav>
 
-
+    <main>
 <section id="presentacion">
     <h2 class="titulo">Presentación</h2>
-    <p class="texto">Hola, soy <strong>Claudia Fernández Ramos</strong> de 1º de bachillerato B. Me interesan <em>la física</em>, <em>la tecnología</em> y <em>el diseño</em>. 
+    <p class="texto">Hola, soy <strong class="strong">Claudia Fernández Ramos</strong> de 1º de bachillerato B. Me interesan <em>la física</em>, <em>la tecnología</em> y <em>el diseño</em>. 
     En esta página podrás consultar mis ejercicios de introducción a HTML y algunos recursos que considero útiles.</p>
     <p class="texto"><small>Última actualización: 26/01/2026.</small></p>
 </section>
 
+
+      
+
     
+
 <section id="ejercicioshtml"  class="practicas">
-    <h2 class="titulo">Mis ejercicios · Introducción HTML</h2>
-    <p class="texto">Accede a cada ejercicio desde esta lista. Los archivos están en la carpeta <code>ejercicios_html/</code>:</p>
-    <ul>
-      <li><a href="ejercicios/web_fernandezramos_claudia_tarea_1.html">Tarea 1 · Estructura mínima + títulos y párrafos</a></li>
-      <li><a href="ejercicios/web_fernandezramos_claudia_tarea_2.html">Tarea 2 · Énfasis y anidado de etiquetas (inline)</a></li>
-      <li><a href="ejercicios/web_fernandezramos_claudia_tarea_3.html">Tarea 3 · Listas en HTML</a></li>
-      <li><a href="ejercicios/web_fernandezramos_claudia_tarea_4.html">Tarea 4 · Enlaces con <code>&lt;a&gt;</code></a></li>
-      <li><a href="ejercicios/web_fernandezramos_claudia_tarea_5.html">Tarea 5 · Imágenes con <code>&lt;img&gt;</code></a></li>
-      </ul>
-</section>
 
-      
-    
-<section id="ejerciciosccs" class="practicas">
-    <h2 class="titulo">Mis ejercicios CSS</h2>
+  <h2 class="titulo">Mis ejercicios · Introducción HTML</h2>
+  <p class="texto">Accede a cada ejercicio desde esta lista. Los archivos están en la carpeta <code>ejercicios_html/</code>:</p>
+
+  <article>
+    <h3>Tarea 1 · Estructura mínima + títulos y párrafos</h3>
     <ul>
-     <li><a href="ejercicios/web_fernandezramos_claudia_css_1.html">Tarea 1 CSS · Color de texto, color de fondo y tipo de letra <code>&lt;img&gt;</code></a></li>
-      <li><a href="ejercicios/web_fernandezramos_claudia_css_2.html">Tarea 2 CSS · Selector mediante id </a></li>
-   <li><a href="ejercicios/web_fernandezramos_claudia_css_3.html">Tarea 3 CSS · Uso de id y de class en tarea de criatura colorida</a></li>
-   <li><a href="ejercicios/web_fernandezramos_claudia_css_4.html">Tarea 4 CSS · Modelo de caja en página de criaturas coloridas</a></li>
+      <li><a href="ejercicios/web_fernandezramos_claudia_tarea_1.html">Abrir ejercicio</a></li>
     </ul>
+  </article>
+
+  <article>
+    <h3>Tarea 2 · Énfasis y anidado de etiquetas (inline)</h3>
+    <ul>
+      <li><a href="ejercicios/web_fernandezramos_claudia_tarea_2.html">Abrir ejercicio</a></li>
+    </ul>
+  </article>
+
+<article>
+    <h3>Tarea 3 · Listas en HTML</h3>
+    <ul>     <li><a href="ejercicios/web_fernandezramos_claudia_tarea_3.html">Abrir ejercicio</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3>Tarea 4 · Enlaces con <code>&lt;a&gt;</code></h3>
+    <ul>
+  <li><a href="ejercicios/web_fernandezramos_claudia_tarea_4.html">Abrir ejercicio</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3>Tarea 5 · Imágenes con <code>&lt;img&gt;</code></h3>
+   <ul>
+   <li><a href="ejercicios/web_fernandezramos_claudia_tarea_5.html">Abrir ejercicio</a></li>
+    </ul>
+  </article>
 </section>
 
       
+
+
+<section id="ejercicioscss" class="practicas">
+  <h2 class="titulo">Mis ejercicios CSS</h2>
+
+  <article>
+    <h3>Tarea 1 CSS · Color de texto, color de fondo y tipo de letra <code>&lt;img&gt;</code></h3>
+    <ul>
+      <li><a href="ejercicios/web_fernandezramos_claudia_css_1.html">Abrir ejercicio</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3>Tarea 2 CSS · Selector mediante id</h3>
+    <ul>
+      <li><a href="ejercicios/web_fernandezramos_claudia_css_2.html">Abrir ejercicio</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3>Tarea 3 CSS · Uso de id y de class en tarea de criatura colorida</h3>
+    <ul>
+      <li><a href="ejercicios/web_fernandezramos_claudia_css_3.html">Abrir ejercicio</a></li>
+    </ul>
+  </article>
+<article>
+  <h3>Tarea 4 CSS · Modelo de caja en página de criaturas coloridas</h3>
+  <ul>
+    <li><a href="ejercicios/web_fernandezramos_claudia_css_4.html">Abrir ejercicio</a></li>
+  </ul>
+</article>
+  </section>
+
+    
       
+
 <section id="imagen">
     <h2 class="titulo">Imagen de portada</h2>
        <img src="../imagenes/clase_ordenadores.jpg" 
@@ -126,7 +184,7 @@ article {
 </section>
 
       
-  
+
 <section id="referencias" class="recursos">
     <h2 class="titulo">Recursos de calidad (externos)</h2>
     <p class="texto">Referencias consultadas durante las tareas (se abrirán en pestaña nueva):</p>
@@ -140,7 +198,7 @@ article {
 </section>
 
       
-  
+
 <section id="creditos"  class="recursos">
     <h2 class="titulo">Créditos y licencias</h2>
     <p class="texto">Recoge aquí, en una lista, los autores, títulos, licencias y enlaces de las imágenes usadas:</p>
@@ -184,15 +242,24 @@ article {
 </section>
 
       
-  
+
+ 
 <section id="contacto">
     <h2 class="titulo">Contacto</h2>
     <p class="texto">Si necesitas comentar algo sobre mis ejercicios, háblame en clase o consulta al profesor. 
     También puedes enlazar recursos de interés y anotarlos aquí.</p>
 </section>
+    
+    </main>
 
+    
+<footer>
+  <p class="texto">© 2026 · Claudia Fernández Ramos</p>
+  <a href="#inicio">Volver arriba</a>
+</footer>
   </body>
 </html>
+
 
 
 
