@@ -2,49 +2,45 @@
 
 <head> 
 
-<title>Promedio</title> 
+<title>Cuadrado</title> 
 </head> 
 <body> 
 <script> 
 
   //DEFINO VARIABLES// 
 
- let numero_1; 
- let numero_2; 
- let numero_3;
- let promedio; 
+ let lado; 
+ let areacuadrado; 
 
   
 
   //PIDO VALORES AL USUSARIO// 
 
-numero_1=prompt("Dame un número cualquiera"); 
-numero_2=prompt("Dame otro número cualquiera"); 
-numero_3=prompt("Dame un último número cualquiera"); 
+lado=prompt("Dame un valor cualquiera para el lado del cuadrado"); 
+
 
 
   
 
   //COMBIERTO EN FLOAT// 
 
- numero_1=parseFloat(numero_1); 
- numero_2=parseFloat(numero_2); 
- numero_3=parseFloat(numero_3); 
+ lado=parseFloat(lado); 
 
 
   
 
   //HAGO LA OPERACION QUE ME DA LA GANA// 
 
-promedio=(numero_1 + numero_2 + numero_3)/3 
+areacuadrado=lado*lado
 
   
 
- alert("El resultado del promedio es: " + promedio); 
+ alert("El resultado del área del cuadrdado es: " + promedio); 
 
-document.write("<h1>El resultado de tu promedio es: " + promedio + "</h1>");
+document.write("<h1>El resultado del área del cuadrado es: " + areacuadrado + "</h1>");
 
 </script>
 </body> 
 
 </html> 
+
