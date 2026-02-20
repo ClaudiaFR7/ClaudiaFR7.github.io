@@ -1,32 +1,33 @@
-<html> 
+<html>
+<head>
+  <title>Conversión Euros a Dólares</title>
+</head>
+<body>
+<script>
 
-<head> 
+// DEFINO VARIABLES //
 
-<title>Currency</title> 
-</head> 
-<body> 
-<script> 
+let numeroEuros;
+let numeroDolares;
 
+// PIDO VALORES AL USUARIO //
 
+numeroEuros = prompt("Introduce la cantidad de Euros que quieres convertir a Dólares");
 
+// CONVIERTO EN FLOAT //
 
+numeroEuros = parseFloat(numeroEuros);
 
+// HAGO LA CONVERSION //
 
+numeroDolares = numeroEuros * 1.12;
 
+// MUESTRO EL RESULTADO //
 
+alert("El resultado es: " + numeroDolares + " $");
 
+document.write("<h1>" + numeroEuros + " Euros son " + numeroDolares + " Dólares</h1>");
 
-
-
-
-
-
-
-
-
-  
-document.write("<h1>: " +  + "</h1>");
-
-</script >
-</body> 
-</html> 
+</script>
+</body>
+</html>
