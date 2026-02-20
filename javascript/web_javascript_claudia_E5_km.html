@@ -1,36 +1,33 @@
-<html> 
+<html>
+<head>
+  <title>Conversión Km a Metros</title>
+</head>
+<body>
+<script>
 
-<head> 
+// DEFINO VARIABLES //
 
-<title>Kilometros</title> 
-</head> 
-<body> 
-<script> 
+let numeroKm;
+let numeroMetros;
 
+// PIDO VALORES AL USUARIO //
 
+numeroKm = prompt("Introduce los kilómetros que quieres convertir a metros");
 
+// CONVIERTO EN FLOAT //
 
+numeroKm = parseFloat(numeroKm);
 
+// HAGO LA CONVERSION //
 
+numeroMetros = numeroKm * 1000;
 
+// MUESTRO EL RESULTADO //
 
+alert("El resultado es: " + numeroMetros + " metros");
 
+document.write("<h1>" + numeroKm + " km son " + numeroMetros + " metros</h1>");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  document.write("<h1>: " +  + "</h1>");
-
-</script >
-</body> 
-</html> 
+</script>
+</body>
+</html>
