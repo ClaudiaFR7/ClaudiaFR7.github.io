@@ -1,1 +1,43 @@
+<html> 
 
+<head> 
+
+<title>Volumen cilindro</title> 
+</head> 
+<body> 
+<script> 
+
+  //DEFINO VARIABLES// 
+
+ let radio; 
+ let altura;
+ let volumenCilindro; 
+
+  
+
+  //PIDO VALORES AL USUSARIO// 
+
+radio=prompt("Introduce el radio de tu cilindro"); 
+altura=prompt("Introduce la altura de tu cilindro"); 
+  
+
+  //COMBIERTO EN FLOAT// 
+
+ radio=parseFloat(radio);
+  altura=parseFloat(altura)
+
+
+  
+
+  //HAGO LA OPERACION QUE ME DA LA GANA// 
+
+ volumenCilindro=(PI*radio*radio*altura)
+  
+
+ alert("El voluen de tu cilindro es: " + volumenCilindro); 
+
+document.write("<h1>El volumen de tu cilindro es: " + volumenCilindro + "</h1>");
+
+</script >
+</body> 
+</html> 
