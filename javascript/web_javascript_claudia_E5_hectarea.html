@@ -1,26 +1,33 @@
-<html> 
+<html>
+<head>
+  <title>Conversión Hectáreas a m²</title>
+</head>
+<body>
+<script>
 
-<head> 
+// DEFINO VARIABLES //
 
-<title>Hectareas</title> 
-</head> 
-<body> 
-<script> 
+let numeroHectareas;
+let numeroMetros2;
 
+// PIDO VALORES AL USUARIO //
 
+numeroHectareas = prompt("Introduce la cantidad de hectáreas que quieres convertir a metros cuadrados");
 
+// CONVIERTO EN FLOAT //
 
+numeroHectareas = parseFloat(numeroHectareas);
 
+// HAGO LA CONVERSION //
 
+numeroMetros2 = numeroHectareas * 10000; // 1 ha = 10000 m²
 
+// MUESTRO EL RESULTADO //
 
+alert("El resultado es: " + numeroMetros2 + " m²");
 
+document.write("<h1>" + numeroHectareas + " hectáreas son " + numeroMetros2 + " metros cuadrados</h1>");
 
-
-
-
-  document.write("<h1>: " +  + "</h1>");
-
-</script >
-</body> 
-</html> 
+</script>
+</body>
+</html>
