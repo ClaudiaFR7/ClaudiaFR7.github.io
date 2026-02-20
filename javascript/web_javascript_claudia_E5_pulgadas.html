@@ -1,32 +1,33 @@
-<html> 
+<html>
+<head>
+  <title>Conversión Pulgadas a Centímetros</title>
+</head>
+<body>
+<script>
 
-<head> 
+// DEFINO VARIABLES //
 
-<title>Pulgadas</title> 
-</head> 
-<body> 
-<script> 
+let numeroPulgadas;
+let numeroCentimetros;
 
+// PIDO VALORES AL USUARIO //
 
+numeroPulgadas = prompt("Introduce la cantidad de pulgadas que quieres convertir a centímetros");
 
+// CONVIERTO EN FLOAT //
 
+numeroPulgadas = parseFloat(numeroPulgadas);
 
+// HAGO LA CONVERSION //
 
+numeroCentimetros = numeroPulgadas * 2.54;
 
+// MUESTRO EL RESULTADO //
 
+alert("El resultado es: " + numeroCentimetros + " cm");
 
+document.write("<h1>" + numeroPulgadas + " pulgadas son " + numeroCentimetros + " centímetros</h1>");
 
-
-
-
-
-
-
-
-
-
-  document.write("<h1>: " +  + "</h1>");
-
-</script >
-</body> 
-</html> 
+</script>
+</body>
+</html>
