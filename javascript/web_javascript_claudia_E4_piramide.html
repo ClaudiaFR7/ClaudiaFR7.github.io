@@ -9,32 +9,34 @@
 
   //DEFINO VARIABLES// 
 
- let radio; 
+ let anchura; 
  let altura;
+  let profundidad;
  let volumenPiramide; 
 
   
 
   //PIDO VALORES AL USUSARIO// 
 
-radio=prompt("Introduce el radio de tu pirámide"); 
+anchura=prompt("Introduce la anchura de tu pirámide"); 
 altura=prompt("Introduce la altura de tu pirámide"); 
+profundidad=prompt("Introduce la profundidad de tu pirámide");
   
 
   //COMBIERTO EN FLOAT// 
 
- radio=parseFloat(radio);
-  altura=parseFloat(altura)
-
+ anchura=parseFloat(anchura);
+  altura=parseFloat(altura);
+profundidad=parseFloat(profundidad);
 
   
 
-  //HAGO LA OPERACION QUE ME DA LA GANA// 
+  //HAGO LA OPERACION // 
 
- volumenPiramide=(PI*radio*radio*altura)
+ volumenPiramide=((anchura * altura* profundidad)/3);
   
 
- alert("El voluen de tu pirámide es: " + volumenPiramide); 
+ alert("El volumen de tu pirámide es: " + volumenPiramide); 
 
 document.write("<h1>El volumen de tu pirámide es: " + volumenPiramide + "</h1>");
 
