@@ -1,1 +1,45 @@
+<html> 
 
+<head> 
+
+<title>Volumen prisma</title> 
+</head> 
+<body> 
+<script> 
+
+  //DEFINO VARIABLES// 
+
+ let anchura; 
+ let altura;
+  let profundidad;
+ let volumenPrisma; 
+
+  
+
+  //PIDO VALORES AL USUSARIO// 
+
+anchura=prompt("Introduce la anchura de tu prisma"); 
+altura=prompt("Introduce la altura de tu prisma"); 
+profundidad=prompt("Introduce la profundidad de tu prisma");
+  
+
+  //COMBIERTO EN FLOAT// 
+
+ anchura=parseFloat(anchura);
+  altura=parseFloat(altura);
+profundidad=parseFloat(profundidad);
+
+  
+
+  //HAGO LA OPERACION // 
+
+ volumenPrisma=(anchura * profundidad * altura);
+  
+
+ alert("El volumen de tu prisma es: " + volumenPrisma); 
+
+document.write("<h1>El volumen de tu prisma es: " + volumenPrisma + "</h1>");
+
+</script >
+</body> 
+</html> 
