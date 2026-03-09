@@ -1,110 +1,119 @@
 <!doctype html>
+
 <html lang="es">
+
 <head>
+
 <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>P01 — Consola, tipos y operadores</title>
+
 </head>
 
 <body>
+
 <h1>P01 — Consola, tipos y operadores</h1>
+
 <p>Abre la consola del navegador para ver parte de los resultados (F12).</p>
 
- <script>
-// BLOQUE 1 — Secuencia
-/* Estas alertas deben tener sentido en orden.
-El intérprete ejecuta de arriba abajo. */
+<script>
 
- 
+// BLOQUE 1 — Secuencia
+
+// Estos son pasos para hacer la cama
+
+/* Las alertas deben aparecer
+   en orden porque JavaScript
+   ejecuta el código de arriba abajo */
 
 alert("Paso 1: Airea las sábanas de tu cama durante 5 minutos mínimo.");
-
- 
-
 alert("Paso 2: Coloca la sábana bajera dejandola lo más tirante posible.");
-
- 
-
 alert("Paso 3: Coloca la colcha encima e intenta alisarla con tus manos.");
-
- 
-
-alert("Paso 4: Coloca la almohada, y si quieres, una manta bien doblada encima.");
+alert("Paso 4:  Coloca la almohada, y si quieres, una manta bien doblada encima.");
 
 
-// BLOQUE 2 — Consola: + con tipos 
-  var x = 16 + 4; console.log(x); 
-  var x = "16" + "Blue"; console.log(x); 
-  var x = 16 + 4 + "Blue"; console.log(x); 
-  var x = "Blue" + 16 + 4; console.log(x); 
 
-// BLOQUE 3 — Consola: undefined y cambios de tipo 
-  var x; console.log(x); // escribe aquí lo que sale
-  var x = 5; console.log(x); //5
-  var x = "Juan"; console.log(x); //Juan
+// BLOQUE 2 — Consola: + con tipos
+
+var x = 16 + 4;
+console.log(x); // 20
+
+var x = "16" + "Blue";
+console.log(x); // 16Blue
+
+var x = 16 + 4 + "Blue";
+console.log(x); // 20Blue
+
+var x = "Blue" + 16 + 4;
+console.log(x); // Blue164
 
 
-// BLOQUE 4.1 — Prioridad aritmética var resultado_0 = 33 - 12 / 2; var resultado_1 = (33 - 12) / 2; var resultado_2 = 33 - 12 * 2; var resultado_3 = 33 - 12 ** 2; var resultado_4 = (33 - 12) ** 2; var resultado_5 = 33 - 12 * 2 ** 2;
+
+// BLOQUE 3 — Consola: undefined y cambios de tipo
+
+var x;
+console.log(x); // undefined
+
+var x = 5;
+console.log(x); // 5
+
+var x = "Juan";
+console.log(x); // Juan
+
+
+
+// BLOQUE 4.1 — Prioridad aritmética
+
+var resultado_0 = 33 - 12 / 2;
+var resultado_1 = (33 - 12) / 2;
+var resultado_2 = 33 - 12 * 2;
+var resultado_3 = 33 - 12 ** 2;
+var resultado_4 = (33 - 12) ** 2;
+var resultado_5 = 33 - 12 * 2 ** 2;
 var resultado_6 = 33 - 12 / 2 ** 2;
 
- 
+console.log("resultado_0 =", resultado_0);
+console.log("resultado_1 =", resultado_1);
+console.log("resultado_2 =", resultado_2);
+console.log("resultado_3 =", resultado_3);
+console.log("resultado_4 =", resultado_4);
+console.log("resultado_5 =", resultado_5);
+console.log("resultado_6 =", resultado_6);
 
-console.log("resultado_0 =", resultado_0); console.log("resultado_1 =", resultado_1); console.log("resultado_2 =", resultado_2); console.log("resultado_3 =", resultado_3); console.log("resultado_4 =", resultado_4); console.log("resultado_5 =", resultado_5); console.log("resultado_6 =", resultado_6);
 
- // BLOQUE 4.2 — Comparación y lógicos
 
- 
+// BLOQUE 4.2 — Comparación y lógicos
 
-var resultado_7 = 33 - 12 * 2 ** 2 >= 100; 
-
- 
-
-var resultado_8 = 33 - 12 / 2 ** 2 >= 100; 
-
- 
-
+var resultado_7 = 33 - 12 * 2 ** 2 >= 100;
+var resultado_8 = 33 - 12 / 2 ** 2 >= 100;
 var resultado_9 = 33 - 12 * 2 ** 2 < 3 && 2 < 33 - 12 / 2 ** 2;
 
- 
+console.log("resultado_7 =", resultado_7); // false
+console.log("resultado_8 =", resultado_8); // false
+console.log("resultado_9 =", resultado_9); // false
 
-console.log("resultado_7 =", resultado_7);
 
- 
 
-console.log("resultado_8 =", resultado_8);
-
- 
-
-console.log("resultado_9 =", resultado_9);
-
-  // SALIDA EN PÁGINA — document.write()
-
- 
+// SALIDA EN PÁGINA — document.write()
 
 var A = 10;
-
- 
-
 var B = 20;
-
- 
 
 document.write("<h2>Resultados lógicos</h2>");
 
- 
+document.write("<p>A menor que B y B menor que A es: → " + (A < B && B < A) + "</p>");
 
-document.write("<p>A menor que B y B menor que A es:  → " + (A < B && B < A) + "</p>");
+document.write("<p>A menor que B o B menor que A es: → " + ((A < B) || (B < A)) + "</p>");
 
- 
+document.write("<p>Si negamos que A es menor que B entonces es: → " + (!(A < B)) + "</p>");
 
-document.write("<p>A menos que B o B menor que A es: " + ((A < B) || (B < A)) + "</p>");
+</script>
 
- 
-
-document.write("<p>Si negamos que A es menor que B entonces es: " + (!(A < B)) + "</p>");
- </script>
 </body>
+
 </html>
+
 
  
