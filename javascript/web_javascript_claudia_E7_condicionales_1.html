@@ -11,46 +11,59 @@
 
         <script>
 
- let jugar = prompt("Este programa funciona tomando decisiones. ¿Quieres jugar? Responde con s si es que sí o con n si es que no");
- 
- if (jugar == "n") {alert("Es una pena que no quieras participar. Quizás para la siguiente.");}
- else if (jugar == "s") {
-var fruta = prompt("Introduce el nombre de una fruta que desees con la primera letra en mayúscula");
-switch (fruta) {
-          case 'Naranjas':
+        let jugar = prompt("Este programa funciona tomando decisiones. ¿Quieres jugar? Responde con s si es que sí o con n si es que no");
+
+if (jugar == "n") {
+    alert("Es una pena que no quieras participar. Quizás para la siguiente.");
+} 
+else if (jugar == "s") {
+
+    var fruta = prompt("Introduce el nombre de una fruta que desees con la primera letra en mayúscula");
+
+    switch (fruta) {
+        case 'Naranjas':
             alert('El kilogramo de naranjas cuesta $0.59.');
             break;
-          case 'Manzanas':
+        case 'Manzanas':
             alert('El kilogramo de manzanas cuesta $0.32.');
             break;
-          case 'Platanos':
+        case 'Platanos':
             alert('El kilogramo de plátanos cuesta $0.48.');
             break;
-          case 'Cerezas':
+        case 'Cerezas':
             alert('El kilogramo de cerezas cuesta $3.00.');
             break;
-          case 'Mangos':
-          case 'Papayas':
+        case 'Mangos':
+        case 'Papayas':
             alert('El kilogramo de mangos y papayas cuesta $2.79.');
             break;
-         case 'Uvas':
-            alert('El kilogramo de naranjas cuesta $0.63.');
+        case 'Uvas':
+            alert('El kilogramo de uvas cuesta $0.63.');
             break;
-          case 'Mandarinas':
-         case 'Melocotones':
-            alert('El kilogramo de mangos y papayas cuesta $1.59.');
+        case 'Mandarinas':
+        case 'Melocotones':
+            alert('El kilogramo cuesta $1.59.');
             break;
-          default:
+        default:
             alert('Lo lamentamos, por el momento no disponemos de ' + fruta + '.');
-        }
-  else {alert("Deberias haber introducido s o n.");}
+    }
 
-        var respuesta = prompt("¿Hay algo más que quieras consultar? Responde si o no");
+} 
+else {
+    alert("Deberias haber introducido s o n.");
+}
 
-        if (respuesta == "si") {alert("No tenemos tiempo para responderte en este momento. Gracias.");}
-        if else (respuesta == "ni") {alert("Muchas gracias por su consulta.");}
-        else {alert("Deberias haber introducido si o no.");}
+var respuesta = prompt("¿Hay algo más que quieras consultar? Responde si o no");
 
+if (respuesta == "si") {
+    alert("No tenemos tiempo para responderte en este momento. Gracias.");
+} 
+else if (respuesta == "no") {
+    alert("Muchas gracias por su consulta.");
+} 
+else {
+    alert("Deberias haber introducido si o no.");
+}
 
         </script>
 
