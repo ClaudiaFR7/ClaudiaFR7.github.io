@@ -11,16 +11,33 @@
 
         <script>
 
-var culpable = window.prompt("¿eres culpable?"); // si, no
+var culpable = window.prompt("¿has suspendido digitalización?"); // si, no
 
     if (culpable == "si") {
-        document.write("<p>Irás a la cárcel.</p>");
+        document.write("<p>Seras castigado.</p>");
     } else if (culpable == "no") {
-        document.write("<p>Irás a casa.</p>");
+        document.write("<p>Felicidades.</p>");
     } else {
-        document.write("<p>La documentación por favor.</p>");
+        document.write("<p>Deberías haber constestado.</p>");
     }
+let valor = null;
 
+if (valor === null) { 
+    alert("El valor es nulo."); 
+} else { 
+    alert("El valor no es nulo."); 
+}
+         let num = parseInt(prompt("Ingresa un número:"));
+
+if (num > 0 && num % 2 === 0) { 
+    console.log("El número es positivo y par.");
+} 
+else if (num > 0 && num % 2 !== 0) { 
+    console.log("El número es positivo y impar.");
+} 
+else { 
+    console.log("El número no es positivo o no es par.");
+}
         </script>
 
     </body>
