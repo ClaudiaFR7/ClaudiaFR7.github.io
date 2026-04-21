@@ -1,44 +1,133 @@
- <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Ejercicio 08 — else if y switch</title>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 08 — else if y switch</title>
+</head>
+<body>
 
-        <h1>Ejercicio 08 — Estructuras condicionales else if y switch</h1>
-        <p>En este ejercicio se trabaja con decisiones múltiples, corrección de errores de sintaxis y comparación entre else if y switch.</p>
+<h1>Ejercicio 08 — else if y switch</h1>
 
-        <script>
+<p>
+En este ejercicio uso if, else if y switch para tomar decisiones en JavaScript.
+También he corregido errores y probado los programas.
+</p>
 
-var culpable = window.prompt("¿has suspendido digitalización?"); // si, no
+<h2>Explicación</h2>
 
-    if (culpable == "si") {
-        document.write("<p>Seras castigado.</p>");
-    } else if (culpable == "no") {
-        document.write("<p>Felicidades.</p>");
-    } else {
-        document.write("<p>Deberías haber constestado.</p>");
-    }
+<p><strong>Ejercicio 1:</strong> Pide un número y dice si es positivo, negativo o cero.</p>
+
+<p><strong>Ejercicio 2:</strong> Pide una contraseña y comprueba si es correcta.</p>
+
+<p><strong>Ejercicio 3:</strong> La variable es null y el programa lo detecta.</p>
+
+<p><strong>Ejercicio 4:</strong> Comprueba si un número es positivo y si es par o impar.</p>
+
+<script>
+
+// PARTE 1
+var respuesta = prompt("¿has hecho los deberes?");
+
+if (respuesta == "si") {
+    document.write("<p>Muy bien.</p>");
+} else if (respuesta == "no") {
+    document.write("<p>Deberías hacerlos.</p>");
+} else {
+    document.write("<p>Responde bien.</p>");
+}
+
+
+// EJERCICIO 1
+let numero = prompt("Ingresa un número:");
+
+if (numero > 0) {
+    alert("Positivo");
+} else if (numero < 0) {
+    alert("Negativo");
+} else {
+    alert("Cero");
+}
+
+
+// EJERCICIO 2
+let contraseña = prompt("Ingresa tu contraseña:");
+
+if (contraseña === "secreto123") {
+    document.write("<p>Correcta</p>");
+} else {
+    document.write("<p>Incorrecta</p>");
+}
+
+
+// EJERCICIO 3
 let valor = null;
 
-if (valor === null) { 
-    alert("El valor es nulo."); 
-} else { 
-    alert("El valor no es nulo."); 
+if (valor === null) {
+    alert("Es nulo");
+} else {
+    alert("No es nulo");
 }
-         let num = parseInt(prompt("Ingresa un número:"));
 
-if (num > 0 && num % 2 === 0) { 
-    console.log("El número es positivo y par.");
-} 
-else if (num > 0 && num % 2 !== 0) { 
-    console.log("El número es positivo y impar.");
-} 
-else { 
-    console.log("El número no es positivo o no es par.");
+
+// EJERCICIO 4
+let num = parseInt(prompt("Ingresa un número:"));
+
+if (num > 0 && num % 2 === 0) {
+    console.log("Positivo y par");
+} else if (num > 0 && num % 2 !== 0) {
+    console.log("Positivo e impar");
+} else {
+    console.log("Otro caso");
 }
-        </script>
 
-    </body>
-    </html>
+
+// HELADOS (ELSE IF)
+var topping = prompt("Topping: oreo, kitkat, brownie, lacasitos");
+var precio = 0;
+var helado = 1.90;
+
+if (topping == "oreo") {
+    precio = 1;
+} else if (topping == "kitkat") {
+    precio = 1.50;
+} else if (topping == "brownie") {
+    precio = 0.75;
+} else if (topping == "lacasitos") {
+    precio = 0.95;
+} else {
+    document.write("<p>No hay ese topping</p>");
+    precio = 0;
+}
+
+document.write("<p>Total: " + (helado + precio) + " €</p>");
+
+
+// HELADOS (SWITCH)
+var topping2 = prompt("Elige topping");
+var precio2 = 0;
+var helado2 = 1.90;
+
+switch (topping2) {
+    case "oreo":
+        precio2 = 1;
+        break;
+    case "kitkat":
+        precio2 = 1.50;
+        break;
+    case "brownie":
+        precio2 = 0.75;
+        break;
+    case "lacasitos":
+        precio2 = 0.95;
+        break;
+    default:
+        document.write("<p>No hay ese topping</p>");
+        precio2 = 0;
+}
+
+document.write("<p>Total: " + (helado2 + precio2) + " €</p>");
+
+</script>
+
+</body>
+</html>
