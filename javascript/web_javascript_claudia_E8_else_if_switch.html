@@ -25,49 +25,38 @@ También he corregido errores y probado los programas.
 
 <script>
 
-// PARTE 1
-var respuesta = prompt("¿has hecho los deberes?");
+//Parte 1
+var respuesta = prompt("¿Has hecho los deberes? (Debes contestar Si o No)");
 
-if (respuesta == "si") {
+if (respuesta == "Si") {
     document.write("<p>Muy bien.</p>");
-} else if (respuesta == "no") {
+} else if (respuesta == "No") {
     document.write("<p>Deberías hacerlos.</p>");
 } else {
     document.write("<p>Responde bien.</p>");
 }
 
 
-// EJERCICIO 1
+//EJERCICIO 1
 let numero = prompt("Ingresa un número:");
 
-if (numero > 0) {
-    alert("Positivo");
-} else if (numero < 0) {
-    alert("Negativo");
-} else {
-    alert("Cero");
-}
+if (numero > 0) {alert("El número es positivo");} 
+else if (numero < 0) {alert("El número es negativoegativo");} 
+else {alert("El número es cero");}
 
 
 // EJERCICIO 2
-let contraseña = prompt("Ingresa tu contraseña:");
+let contraseña = prompt("Ingresa tu contraseña (la respuesta correcta sería "secreto123"):");
 
-if (contraseña === "secreto123") {
-    document.write("<p>Correcta</p>");
-} else {
-    document.write("<p>Incorrecta</p>");
-}
+if (contraseña === "secreto123") {document.write("<p>Contraseña correcta. Bienvenido!</p>");} 
+else {document.write("<p>Contraseña incorrecta</p>");}
 
 
 // EJERCICIO 3
 let valor = null;
 
-if (valor === null) {
-    alert("Es nulo");
-} else {
-    alert("No es nulo");
-}
-
+if (valor === null) {alert("El valor es nulo");} 
+else {alert("El valor no es nulo");}
 
 // EJERCICIO 4
 let num = parseInt(prompt("Ingresa un número:"));
