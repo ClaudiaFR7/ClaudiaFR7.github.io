@@ -8,52 +8,81 @@
 
 <script>
 
-//Parte 1
-let respuesta = prompt("¿Has hecho los deberes? (Debes contestar Si o No)");
+// ======================
+// PARTE 1
+// ======================
+document.write("<h2>Parte 1</h2>");
 
-if (respuesta == "Si") {
-    document.write("<p>Muy bien.</p>");
-} else if (respuesta == "No") {
-    document.write("<p>Deberías hacerlos.</p>");
+var respuesta = prompt("¿Has hecho los deberes?");
+
+if (respuesta == "si") {
+    document.write("<p>Muy bien</p>");
+} else if (respuesta == "no") {
+    document.write("<p>Deberías hacerlos</p>");
 } else {
-    document.write("<p>Responde bien.</p>");
+    document.write("<p>Responde correctamente</p>");
 }
 
 
-//EJERCICIO 1
-let numero = prompt("Ingresa un número (te informaremos sobre si es negativo, positivo o 0):");
+// ======================
+// PARTE 2
+// ======================
+document.write("<h2>Parte 2 - Ejercicio 1</h2>");
 
-if (numero > 0) {alert("El número es positivo");} 
-else if (numero < 0) {alert("El número es negativo");} 
-else {alert("El número es cero");}
+let numero = prompt("Ingresa un número:");
+
+if (numero > 0) {
+    document.write("<p>El número es positivo</p>");
+} else if (numero < 0) {
+    document.write("<p>El número es negativo</p>");
+} else {
+    document.write("<p>El número es cero</p>");
+}
 
 
 // EJERCICIO 2
-let contraseña = prompt("Ingresa tu contraseña (la respuesta correcta sería secreto123):");
+document.write("<h2>Ejercicio 2</h2>");
 
-if (contraseña === "secreto123") {document.write("<p>Contraseña correcta. Bienvenido!</p>");} 
-else {document.write("<p>Contraseña incorrecta</p>");}
+let contraseña = prompt('Ingresa tu contraseña:');
 
-
-// EJERCICIO 3
-let valor = null;
-
-if (valor === null) {alert("El valor es nulo");} 
-else {alert("El valor no es nulo");}
-
-// EJERCICIO 4
-let num = parseInt(prompt("Ingresa un número:"));
-
-if (num > 0 && num % 2 === 0) {
-    console.log("Positivo y par");
-} else if (num > 0 && num % 2 !== 0) {
-    console.log("Positivo e impar");
+if (contraseña === "secreto123") {
+    document.write("<p>Contraseña correcta</p>");
 } else {
-    console.log("Otro caso");
+    document.write("<p>Contraseña incorrecta</p>");
 }
 
 
-// HELADOS (ELSE IF)
+// EJERCICIO 3
+document.write("<h2>Ejercicio 3</h2>");
+
+let valor = null;
+
+if (valor === null) {
+    document.write("<p>El valor es nulo</p>");
+} else {
+    document.write("<p>El valor no es nulo</p>");
+}
+
+
+// EJERCICIO 4
+document.write("<h2>Ejercicio 4</h2>");
+
+let num = parseInt(prompt("Ingresa un número:"));
+
+if (num > 0 && num % 2 === 0) {
+    document.write("<p>Es positivo y par</p>");
+} else if (num > 0 && num % 2 !== 0) {
+    document.write("<p>Es positivo e impar</p>");
+} else {
+    document.write("<p>No es positivo</p>");
+}
+
+
+// ======================
+// PARTE 3 - HELADOS
+// ======================
+document.write("<h2>Helados con else if</h2>");
+
 var topping = prompt("Topping: oreo, kitkat, brownie, lacasitos");
 var precio = 0;
 var helado = 1.90;
@@ -67,14 +96,15 @@ if (topping == "oreo") {
 } else if (topping == "lacasitos") {
     precio = 0.95;
 } else {
-    document.write("<p>No hay ese topping</p>");
+    document.write("<p>No tenemos ese topping</p>");
     precio = 0;
 }
 
 document.write("<p>Total: " + (helado + precio) + " €</p>");
 
 
-// HELADOS (SWITCH)
+document.write("<h2>Helados con switch</h2>");
+
 var topping2 = prompt("Elige topping");
 var precio2 = 0;
 var helado2 = 1.90;
@@ -93,7 +123,7 @@ switch (topping2) {
         precio2 = 0.95;
         break;
     default:
-        document.write("<p>No hay ese topping</p>");
+        document.write("<p>No tenemos ese topping</p>");
         precio2 = 0;
 }
 
