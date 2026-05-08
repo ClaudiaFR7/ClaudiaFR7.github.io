@@ -15,6 +15,7 @@
         <button onclick="sumarDosNumeros()">Sumar dos números</button>
         <button onclick="calcularEdad()">Calcular año de nacimiento</button>
         <button onclick="comprobarMayorEdad()">Comprobar mayoría de edad</button>
+<button onclick="comprobarAprobadoSuspenso()">Comprobar calificación</button>
 
         <script>
     function saludar() {
@@ -43,6 +44,16 @@
             alert("Eres mayor de edad.");
         } else {
             alert("Eres menor de edad.");
+        }
+    }
+
+             function comprobarAprobadoSuspenso() {
+        var nota = Number(prompt("Introduce tu nota"));
+
+        if (nota >= 5) {
+            alert("Felicidades has aprobado.");
+        } else {
+            alert("Lo siento, debes ir a recuperación.");
         }
     }
         </script>
