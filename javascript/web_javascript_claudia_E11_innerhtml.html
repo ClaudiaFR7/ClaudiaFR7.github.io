@@ -54,14 +54,16 @@
 
     }
 
-             function calcularEdad() {
+           function calcularEdad() {
 
+        let año = Number(prompt("Introduce el año actual"));
         let edad = Number(prompt("Introduce tu edad"));
-        let anioActual = 2026;
 
-        let fechaNacimiento = anioActual - edad;
+        let nacimiento = año - edad;
 
-        caja.innerHTML = "<p>Tu edad aproximada es: " + fechaNacimiento + "</p>";
+        let caja = document.getElementById("cajaNacimiento");
+
+        caja.innerHTML = "<p>La suma es: " + necimiento + "</p>";
 
     }
 
