@@ -67,6 +67,26 @@
 
     }
 
+             function comprobarMayorEdad() {
+
+let edad;
+  
+edad = prompt("Inserte su edad"); 
+
+  
+edad = parseFloat(edad); 
+
+
+if(edad>18){alert("Usted es menor de edad");}
+else{alert("Usted es mayor de edad");}
+
+
+        let caja = document.getElementById("cajaEdad");
+
+        caja.innerHTML = ("<h1>Usted tiene " + edad + "</h1>");
+    }
+
+
 
         </script>
 
