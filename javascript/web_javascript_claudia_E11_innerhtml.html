@@ -25,13 +25,15 @@
         <button onclick="calcularEdad()">Calcular nacimiento</button>
         <button onclick="comprobarMayorEdad()">Mayoría de edad</button>
         <button onclick="agregarMensaje()">Append</button>
+        <button onclick="mostrarNombre()">Mostrar nombre</button>
+
 
         <div id="cajaSaludo" class="caja"></div>
         <div id="cajaSuma" class="caja"></div>
         <div id="cajaNacimiento" class="caja"></div>
         <div id="cajaEdad" class="caja"></div>
         <div id="cajaAppend" class="caja"></div>
-
+        <div id="cajaNombre" class="caja"></div>
         <script>
 
    function saludar() {
@@ -67,23 +69,23 @@
 
     }
 
-             function comprobarMayorEdad() {
+    function comprobarMayorEdad() {
 
-let edad;
-  
-edad = prompt("Inserte su edad"); 
+        let edad;
 
-  
-edad = parseFloat(edad); 
+        edad = prompt("Inserte su edad");
 
-
-if(edad<18){alert("Usted es menor de edad");}
-else{alert("Usted es mayor de edad");}
-
+        edad = parseFloat(edad);
 
         let caja = document.getElementById("cajaEdad");
 
-        caja.innerHTML = ("<h1>Usted tiene " + edad +" años</h1>");
+        if (edad < 18) {
+
+            caja.innerHTML = "<p>Usted es menor de edad</p>";
+
+        } else {
+
+            caja.innerHTML = "<p>Usted es mayor de edad</p>";
     }
 
     function agregarMensaje() {
@@ -93,7 +95,15 @@ else{alert("Usted es mayor de edad");}
         caja.append(" Nuevo mensaje añadido ");
 
     }
+function mostrarNombre() {
 
+    let nombre = prompt("Introduce tu nombre");
+
+    let caja = document.getElementById("cajaNombre");
+
+    caja.innerHTML = "<p>Hola " + nombre + "</p>";
+
+}
         </script>
 
     </body>
