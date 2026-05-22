@@ -37,19 +37,7 @@
  
         <div id="resultadoSaludo" class="caja"></div>
 
-     function saludar() {
-
- 
-        let nombre = document.getElementById("nombre").value;
-
- 
-        let resultado = document.getElementById("resultadoSaludo");
-
- 
-        resultado.innerHTML = "<h2>Hola " + nombre + "</h2>";
-
- 
-    }
+     
  
         <hr>
 
@@ -66,25 +54,7 @@
  
         <div id="resultadoSuma" class="caja"></div>
 
- function sumar() {
 
- 
-        let numero1 = Number(document.getElementById("numero1").value);
-
- 
-        let numero2 = Number(document.getElementById("numero2").value);
-
- 
-        let suma = numero1 + numero2;
-
- 
-        let resultado = document.getElementById("resultadoSuma");
-
- 
-        resultado.innerHTML = "<p>La suma es: " + suma + "</p>";
-
- 
-    }
         <hr>
 
  
@@ -115,7 +85,19 @@
         <script>
 
  
-        // Aquí irán las funciones
+       function saludar() {
+
+ 
+        let nombre = document.getElementById("nombre").value;
+
+ 
+        let resultado = document.getElementById("resultadoSaludo");
+
+ 
+        resultado.innerHTML = "<h2>Hola " + nombre + "</h2>";
+
+ 
+    }
 
  
         </script>
