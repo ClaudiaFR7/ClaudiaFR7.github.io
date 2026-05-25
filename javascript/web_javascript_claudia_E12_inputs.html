@@ -81,7 +81,10 @@
  
         <div id="resultadoAppend" class="caja"></div>
 
- 
+ <hr>
+      <h2>Nota</h2>
+      <button onclick="resultadoNota()">Comprobar aprobado o suspenso</button>
+      <div id="resultadoNota" class="caja"></div>
         <script>
 
  
@@ -98,24 +101,34 @@ function sumar() {
     let suma = numero1 + numero2;
 
     let resultado = document.getElementById("resultadoSuma");
-    resultado.innerHTML = "<p>La suma es: " + suma + "</p>";
+      resultado.innerHTML = "<p>La suma es: " + suma + "</p>";
 }
 
 function comprobarEdad() {
-    let edad = Number(document.getElementById("edad").value);
+      let edad = Number(document.getElementById("edad").value);
     let resultado = document.getElementById("resultadoEdad");
 
     if (edad >= 18) {
         resultado.innerHTML = "<p>Usted es mayor de edad</p>";
     } else {
         resultado.innerHTML = "<p>Usted es menor de edad</p>";
-    }
 }
 
 function agregarMensaje() {
     let caja = document.getElementById("resultadoAppend");
     caja.append(" Nuevo mensaje añadido ");
+
+
 }
+
+          function comprobarNota() {
+            let nota = Number(document.getElementById("nota").value);
+            let resultado = document.getElementById("resultadoNota");
+
+            if(nota >=5) {
+              resultado.innerHTML = "<p>Usted ha aprobado</p>";
+            }
+            else { resultado.innerHTML = "<p>Usted ha suspendido</p>";}
         </script>
 
     </body>
