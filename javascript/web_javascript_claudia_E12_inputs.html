@@ -83,11 +83,16 @@
 
  <hr>
       <h2>Nota</h2>
-      <button onclick="resultadoNota()">Comprobar aprobado o suspenso</button>
-      <div id="resultadoNota" class="caja"></div>
-        <script>
+
+     
+ <input type="number" id="nota">
 
  
+        <button onclick="nota()">Comprobar nota</button>
+
+ 
+        <div id="resultadoNota" class="caja"></div>
+    <script>
      function saludar() {
     let nombre = document.getElementById("nombre").value;
     let resultado = document.getElementById("resultadoSaludo");
