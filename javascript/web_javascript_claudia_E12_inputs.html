@@ -85,53 +85,37 @@
         <script>
 
  
-       function saludar() {
+     function saludar() {
+    let nombre = document.getElementById("nombre").value;
+    let resultado = document.getElementById("resultadoSaludo");
+    resultado.innerHTML = "<h2>Hola " + nombre + "</h2>";
+}
 
- 
-        let nombre = document.getElementById("nombre").value;
+function sumar() {
+    let numero1 = Number(document.getElementById("numero1").value);
+    let numero2 = Number(document.getElementById("numero2").value);
 
- 
-        let resultado = document.getElementById("resultadoSaludo");
+    let suma = numero1 + numero2;
 
- 
-        resultado.innerHTML = "<h2>Hola " + nombre + "</h2>";
+    let resultado = document.getElementById("resultadoSuma");
+    resultado.innerHTML = "<p>La suma es: " + suma + "</p>";
+}
 
- 
+function comprobarEdad() {
+    let edad = Number(document.getElementById("edad").value);
+    let resultado = document.getElementById("resultadoEdad");
+
+    if (edad >= 18) {
+        resultado.innerHTML = "<p>Usted es mayor de edad</p>";
+    } else {
+        resultado.innerHTML = "<p>Usted es menor de edad</p>";
     }
+}
 
-           function sumar() {
-
- 
-        let numero1 = Number(document.getElementById("numero1").value);
-
- 
-        let numero2 = Number(document.getElementById("numero2").value);
-
- 
-        let suma = numero1 + numero2;
-
- 
-        let resultado = document.getElementById("resultadoSuma");
-
- 
-        resultado.innerHTML = "<p>La suma es: " + suma + "</p>";
-
- 
-    }
-
-
-         function comprobarEdad() {
-
-let edad = document.getElementById("edad").value;
-
-let resultado = document.getElementById("resultadoedad");
-          if(edad >= 18){resultado.innerHTML = "<p>Usted es mayor de edad."</p>;}
-           else {
-            resultado.innerHTML = "<p>Usted es menor de edad."</p>";} 
-
-           function agregarMensaje () {
-           }
-
+function agregarMensaje() {
+    let caja = document.getElementById("resultadoAppend");
+    caja.append(" Nuevo mensaje añadido ");
+}
         </script>
 
     </body>
