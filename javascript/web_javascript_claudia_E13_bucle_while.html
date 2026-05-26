@@ -31,7 +31,50 @@
         <script>
 
  
-        // Aquí irá tu función jugar()
+       function jugar() {
+
+ 
+        let maximo = Number(document.getElementById("maximo").value);
+
+ 
+        let numeroSecreto = Math.floor(Math.random() * maximo) + 1;
+
+ 
+        let intento = Number(prompt("Adivina el número entre 1 y " + maximo));
+
+ 
+        let contador = 1;
+
+ 
+        let texto = "<h2>Juego terminado</h2>";
+
+ 
+        while (intento != numeroSecreto) {
+
+ 
+            if (intento < numeroSecreto) {
+                texto = texto + "<p>Intento " + contador + ": " + intento + " es demasiado pequeño. Prueba con un número mayor.</p>";
+            } else {
+                texto = texto + "<p>Intento " + contador + ": " + intento + " es demasiado grande. Prueba con un número menor.</p>";
+            }
+
+ 
+            intento = Number(prompt("Vuelve a intentarlo"));
+
+ 
+            contador = contador + 1;
+        }
+
+ 
+        texto = texto + "<h1>Has acertado. El número era " + numeroSecreto + "</h1>";
+        texto = texto + "<p>Número de intentos: " + contador + "</p>";
+
+ 
+        let cajaResultado = document.getElementById("resultado");
+        cajaResultado.innerHTML = texto;
+
+ 
+    }
 
  
         </script>
