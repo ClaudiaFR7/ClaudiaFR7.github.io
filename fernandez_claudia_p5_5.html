@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica 5 - Mi creación estática</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+<body>
+<script>
+function setup() {
+  createCanvas(800, 600);
+  background(220);
+
+
+  // 1. Fondo y elementos lejanos.
+//acera
+  fill(173, 173, 173);
+  rect(0, 580, 800, 20);
+
+  //Edificio 1,
+ fill(54, 54, 54);
+  rect(0, 130, 200, 450);
+
+
+   fill(95, 194, 194);
+  rect(0, 200, 50, 100);
+
+     fill(95, 194, 194);
+  rect(0, 350, 50, 100);
+
+   fill(95, 194, 194);
+  rect(80, 200, 100, 100);
+
+     fill(95, 194, 194);
+  rect(80, 350, 100, 100);
+
+
+  //Edificio 2
+
+   fill(173, 173, 173);
+  rect(200, 150, 400, 430);
+
+ stroke(19, 41, 61);
+strokeWeight(4);
+   fill(95, 194, 194);
+  rect(250, 200, 110, 100);
+
+     fill(95, 194, 194);
+  rect(250, 350, 100, 100);
+
+   fill(95, 194, 194);
+  rect(430, 200, 100, 100);
+
+     fill(95, 194, 194);
+  rect(430, 350, 100, 100);
+
+
+
+  //Edificio 3
+noStroke();
+
+   fill(138, 135, 135);
+  rect(600, 110, 300, 470);
+
+ stroke(145, 103, 35);
+strokeWeight(6);
+
+ fill(95, 194, 194);
+  rect(650, 200, 80, 130);
+
+     fill(95, 194, 194);
+  rect(650, 350, 80, 130);
+
+  
+
+  // 2. Figuras principales.
+//puerta edificio 1
+
+ stroke(19, 41, 61);
+strokeWeight(4);
+       fill(33, 33, 33, 100);
+  rect(330, 500, 105, 80);
+
+
+   stroke(252, 252, 252);
+  strokeWeight(4);
+  line(382, 500, 382, 580);
+  // 3. Detalles y acabados.
+
+
+stroke(0);
+strokeWeight(8);
+line(575, 450, 575, 580);
+
+  fill(50, 50, 50);
+ stroke(0);
+ strokeWeight(2);
+triangle(575, 450, 545, 425, 605, 425);
+
+
+ noFill();
+ stroke(0);
+ strokeWeight(3);
+ arc(575, 425, 60, 100, PI, 0);
+
+
+noStroke();
+fill(255, 255, 100);
+ellipse(575, 410, 20, 25);
+}
+</script>
+</body>
+</html>
